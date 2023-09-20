@@ -5,7 +5,11 @@ const team = [
   {
     name: 'رین',
     summary: 'برنامه نویس فرانت اند',
-    photo: rin,
+    color: 'text-orange-400',
+    photo: {
+      url: rin,
+      color: 'bg-gradient-to-br from-yellow-400 to-orange-600',
+    },
     langs: [
       {
         name: 'جاوااسکریپت',
@@ -37,7 +41,11 @@ const team = [
   {
     name: 'مهدی',
     summary: 'برنامه نویس بکند',
-    photo: mahdi,
+    color: 'text-purple-400',
+    photo: {
+      url: mahdi,
+      color: 'bg-gradient-to-br from-red-400 to-purple-600',
+    },
     langs: [
       {
         name: 'لاراول',
@@ -70,16 +78,14 @@ const team = [
         </div>
       </div>
       <div class="flex flex-col items-end">
-        <h1 class="text-red-400 font-bold text-2xl">{{ item.name }}</h1>
+        <h1 :class="'font-bold text-2xl ' + item.color">{{ item.name }}</h1>
         <p class="text-slate-400 font-bold text-sm text-end mt-1">
           {{ item.summary }}
         </p>
       </div>
 
-      <div
-        class="absolute -right-28 p-1 bg-gradient-to-br from-yellow-400 to-orange-600 rounded-full"
-      >
-        <img :src="item.photo" alt="" class="w-56 h-56 rounded-full" />
+      <div :class="'absolute -right-28 p-1 rounded-full ' + item.photo.color">
+        <img :src="item.photo.url" alt="" class="w-52 h-52 rounded-full" />
       </div>
     </div>
   </div>
