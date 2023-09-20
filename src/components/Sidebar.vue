@@ -26,6 +26,18 @@ const sidebarItems = [
     color: 'hover:bg-green-400',
     icon: 'bi-cursor',
   },
+  {
+    to: '/blogs',
+    name: 'وبلاگ',
+    color: 'hover:bg-orange-400',
+    icon: 'px-bookmark',
+  },
+  {
+    to: '/log-in',
+    name: 'ورود',
+    color: 'hover:bg-purple-400',
+    icon: 'fa-regular-user',
+  },
 ]
 </script>
 
@@ -39,7 +51,7 @@ const sidebarItems = [
           </h4>
         </div>
         <router-link :to="item.to">
-          <button :class="'sidebar-btn ' + item.color">
+          <button :class="'sidebar-btn my-2 ' + item.color">
             <v-icon :name="item.icon" class="w-8 h-8" />
           </button>
         </router-link>
