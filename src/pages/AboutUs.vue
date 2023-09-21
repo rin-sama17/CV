@@ -28,12 +28,12 @@ const team = [
       },
       {
         name: 'ریکت',
-        color: 'hover:bg-indigo-400',
+        color: 'hover:bg-indigo-300',
         icon: 'co-react',
       },
       {
         name: 'نکست جی اس',
-        color: 'hover:bg-slate-400',
+        color: 'hover:bg-slate-300',
         icon: 'co-next-js',
       },
     ],
@@ -63,13 +63,15 @@ const team = [
 </script>
 
 <template>
-  <div class="flex flex-col justify-center items-center h-screen">
+  <div
+    class="flex flex-col justify-center items-center space-y-4 h-screen overflow-y-auto"
+  >
     <div
-      class="relative p-3 h-60 w-[39rem] rounded-2xl flex gap-4 items-center justify-end bg-gray-100 m-3 pr-36"
+      class="relative p-3 md:h-60 w-60 md:w-[30rem] lg:w-[39rem] rounded-2xl gap-4 flex flex-col-reverse md:grid md:grid-cols-3 md:items-center justify-end bg-gray-100 m-3 md:pr-36"
       v-for="item in team"
       :key="item.name"
     >
-      <div class="flex flex-col items-end">
+      <div class="flex flex-col items-end col-span-2">
         <h1 class="font-bold text-xl text-gray-600">تکنولوژی ها</h1>
         <div class="flex flex-wrap justify-end items-start mt-1 gap-1 p-3">
           <div v-for="icon in item.langs" :key="icon.name">
@@ -84,8 +86,17 @@ const team = [
         </p>
       </div>
 
-      <div :class="'absolute -right-28 p-1 rounded-full ' + item.photo.color">
-        <img :src="item.photo.url" alt="" class="w-52 h-52 rounded-full" />
+      <div
+        :class="
+          'md:absolute  md:-right-28 md:top-auto w-fit mx-auto p-1 rounded-full ' +
+          item.photo.color
+        "
+      >
+        <img
+          :src="item.photo.url"
+          alt=""
+          class="w-20 h-20 md:w-52 md:h-52 rounded-full"
+        />
       </div>
     </div>
   </div>

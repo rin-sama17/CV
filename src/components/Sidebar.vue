@@ -42,7 +42,7 @@ const sidebarItems = [
 </script>
 
 <template>
-  <div class="sidebar">
+  <div class="hidden md:sidebar">
     <div class="flex items-center" v-for="item in sidebarItems" :key="item">
       <div class="group flex items-center">
         <div class="sidebar-btn-tooltip group-hover:scale-100">
