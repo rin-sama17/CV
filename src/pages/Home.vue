@@ -40,12 +40,14 @@ const options = [
     </div>
     <div class="flex justify-center items-center">
       <div
-        class="p-2 transition-all duration-700 bg-gradient-to-bl from-indigo-400 to-red-500 rounded-full hover:scale-125 shadow-2xl"
+        class="p-2 transition-all duration-700 bg-gradient-to-bl from-indigo-400 to-red-500 rounded-full shadow-2xl"
       >
         <img :src="rin" alt="rin" class="rounded-full w-96 h-96" />
       </div>
     </div>
-    <div class="grid grid-cols-4 col-span-2 items-center justify-items-center">
+    <div
+      class="grid grid-cols-2 md:grid-cols-4 gap-3 col-span-2 items-center justify-items-center"
+    >
       <div
         v-for="item in options"
         :key="item.name"

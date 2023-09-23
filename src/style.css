@@ -15,4 +15,32 @@
     @apply absolute right-24 p-2 font-bold text-sm text-gray-400 bg-gray-600 rounded-md shadow-lg w-20 
     text-center scale-0 transition-all duration-300;
   }
+
+  .input-label {
+    @apply block mb-2 text-xl font-medium text-white text-right;
+  }
+  .input {
+    @apply border my-3 text-right text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

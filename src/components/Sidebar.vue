@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import Login from './Login.vue'
 const sidebarItems = [
   {
     to: '/',
@@ -32,12 +32,6 @@ const sidebarItems = [
     color: 'hover:bg-orange-400',
     icon: 'px-bookmark',
   },
-  {
-    to: '/log-in',
-    name: 'ورود',
-    color: 'hover:bg-purple-400',
-    icon: 'fa-regular-user',
-  },
 ]
 </script>
 
@@ -57,5 +51,6 @@ const sidebarItems = [
         </router-link>
       </div>
     </div>
+    <Login></Login>
   </div>
 </template>

@@ -23,7 +23,15 @@ import {
   BiSpeedometer2,
   MdHighqualityOutlined,
   RiHandCoinLine,
-  MdSupportagent
+  MdSupportagent,
+  MdDaterange,
+  HiSolidUserGroup,
+  BiNewspaper,
+  MdBackuptable,
+  RiAdminFill,
+  HiPencil,
+  IoCamera,
+  BiPlusSquareFill
 } from 'oh-vue-icons/icons';
 
 import { router } from './router';
@@ -48,7 +56,16 @@ addIcons(
   BiSpeedometer2,
   MdHighqualityOutlined,
   RiHandCoinLine,
-  MdSupportagent
+  MdSupportagent,
+  MdDaterange,
+  HiSolidUserGroup,
+  BiNewspaper,
+  MdBackuptable,
+  RiAdminFill,
+  HiPencil,
+  IoCamera,
+  BiPlusSquareFill
+
 );
 
 const app = createApp(App);

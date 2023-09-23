@@ -28,7 +28,7 @@ const team = [
       },
       {
         name: 'ریکت',
-        color: 'hover:bg-indigo-300',
+        color: 'hover:bg-sky-400',
         icon: 'co-react',
       },
       {
