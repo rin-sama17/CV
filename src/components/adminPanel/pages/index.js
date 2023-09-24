@@ -1,0 +1,9 @@
+export { default as UserManagement } from "./UserManagement.vue";
+export { default as BlogManagement } from "./BlogManagement.vue";
+export { default as SampleManagement } from "./SampleManagement.vue";
+export { default as AddAdmin } from "./AddAdmin.vue";
+export { default as AddBlog } from "./AddBlog.vue";
+export { default as AddSample } from "./AddSample.vue";
+export { default as EditAdmin } from "./EditAdmin.vue";
+export { default as EditBlog } from "./EditBlog.vue";
+export { default as EditSample } from "./EditSample.vue";

@@ -9,6 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.16",
+    "@tiptap/pm": "^2.1.11",
+    "@tiptap/starter-kit": "^2.1.11",
+    "@tiptap/vue-3": "^2.1.11",
     "date-fns-jalali": "^2.30.0-0",
     "oh-vue-icons": "^1.0.0-rc3",
     "vue": "^3.3.4",

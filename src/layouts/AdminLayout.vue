@@ -1,5 +1,4 @@
 <script setup>
-import Sidebar from '../components/Sidebar.vue'
 import AdminSidebar from '../components/adminPanel/AdminSidebar.vue'
 </script>
 

@@ -4,32 +4,32 @@ const sidebarItems = [
   {
     to: '/',
     name: 'خانه',
-    color: 'hover:bg-indigo-400',
+    color: 'bg-indigo-400',
     icon: 'co-home',
   },
   {
     name: 'درباره ما',
     to: '/about-us',
-    color: 'hover:bg-red-400',
+    color: 'bg-red-400',
     icon: 'gi-ancient-sword',
   },
 
   {
     to: '/samples',
     name: 'نمونه کار',
-    color: 'hover:bg-yellow-400',
+    color: 'bg-yellow-400',
     icon: 'bi-code-slash',
   },
   {
     to: '/contact-us',
     name: 'تماس با ما',
-    color: 'hover:bg-green-400',
+    color: 'bg-green-400',
     icon: 'bi-cursor',
   },
   {
     to: '/blogs',
     name: 'وبلاگ',
-    color: 'hover:bg-orange-400',
+    color: 'bg-orange-400',
     icon: 'px-bookmark',
   },
 ]
@@ -44,10 +44,12 @@ const sidebarItems = [
             {{ item.name }}
           </h4>
         </div>
-        <router-link :to="item.to">
-          <button :class="'sidebar-btn my-2 ' + item.color">
-            <v-icon :name="item.icon" class="w-8 h-8" />
-          </button>
+        <router-link
+          :to="item.to"
+          :exact-active-class="'sidebar-btn-hover my-2  ' + item.color"
+          :class="'sidebar-btn my-2 hover:' + item.color"
+        >
+          <v-icon :name="item.icon" class="w-8 h-8" />
         </router-link>
       </div>
     </div>

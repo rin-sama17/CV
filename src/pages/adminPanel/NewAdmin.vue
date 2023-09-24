@@ -1,6 +1,4 @@
 <script setup>
-import { rin } from '../../assets'
-import { ref } from 'vue'
 const langs = [
   {
     name: 'جاوااسکریپت',
@@ -50,9 +48,8 @@ const social = [
 <template>
   <div class="flex flex-col p-4 text-white h-screen items-center">
     <div
-      class="relative group mx-auto my-10 p-2 transition-all w-fit duration-700 bg-slate-400 rounded-full shadow-2xl"
+      class="relative group mx-auto my-10 p-2 w-96 h-96 transition-all duration-700 bg-slate-400 rounded-full shadow-2xl"
     >
-      <img :src="rin" alt="rin" class="rounded-full w-96 h-96" />
       <div
         class="opacity-0 transition-all duration-300 group-hover:opacity-100 absolute bottom-0 left-0 h-full w-full p-2"
       >

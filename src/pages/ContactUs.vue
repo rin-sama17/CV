@@ -69,7 +69,10 @@ const team = [
           <h1 class="font-bold text-xl text-gray-600">راه های ارتباطی</h1>
           <div class="flex flex-wrap justify-end items-start mt-1 gap-2 p-3">
             <div v-for="icon in item.social" :key="icon.name">
-              <v-icon :name="icon.icon" :class="'sidebar-btn ' + icon.color" />
+              <v-icon
+                :name="icon.icon"
+                :class="'sidebar-btn cursor-pointer ' + icon.color"
+              />
             </div>
           </div>
         </div>
