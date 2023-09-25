@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col p-4 text-white h-screen items-center">
-    <div
+    <!-- <div
       class="relative group mx-auto my-10 p-2 w-96 h-96 transition-all duration-700 bg-slate-400 rounded-full shadow-2xl"
     >
       <div
@@ -15,8 +15,8 @@
           />
         </div>
       </div>
-    </div>
-
+    </div> -->
+    <ImageUploader></ImageUploader>
     <div class="grid grid-cols-2 gap-4 col-span-2 w-3/4">
       <label class="block">
         <span class="input-label">
@@ -42,14 +42,10 @@
         </span>
         <input type="text" class="input" />
       </label>
-      <div class="flex flex-col items-center group">
-        <h1 class="text-xl font-bold mb-3">تکنولوژی ها</h1>
-        <div class="flex space-x-3 p-3">
-          <div class="transition-all delay-100 duration-400">
-            <SelectLangs></SelectLangs>
-          </div>
-        </div>
+      <div class="col-span-1">
+        <SelectLangs></SelectLangs>
       </div>
+
       <div class="flex flex-col items-center group">
         <h1 class="text-xl font-bold mb-3">راه های ارتباطی</h1>
         <div class="flex flex-wrap justify-end items-start gap-2 p-3">
@@ -66,4 +62,5 @@
 
 <script setup>
 import { SelectSocial, SelectLangs } from '../components'
+import ImageUploader from '../../common/ImageUploader.vue'
 </script>

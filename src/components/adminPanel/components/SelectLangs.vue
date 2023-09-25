@@ -1,9 +1,25 @@
 <template>
-  <v-icon
-    name="bi-plus-square-fill"
-    @click="setIsOpen(true)"
-    class="sidebar-btn hover:bg-emerald-400"
-  />
+  <div class="flex flex-col items-center group">
+    <h1 class="text-xl font-bold mb-3">تکنولوژی ها</h1>
+    <div class="flex space-x-3 p-3">
+      <Transition
+        enter-active-class="animate__animated animate__fadeIn"
+        leave-active-class="animate__animated animate__fadeOut"
+        appear
+        v-for="item in selectedLangs"
+      >
+        <v-icon
+          :name="item.icon"
+          :class="' sidebar-btn  hover:' + item.color"
+        />
+      </Transition>
+      <v-icon
+        name="bi-plus-square-fill"
+        @click="setIsOpen(true)"
+        class="sidebar-btn hover:bg-emerald-400"
+      />
+    </div>
+  </div>
 
   <Modal :isOpen="isOpen" :setIsOpen="setIsOpen">
     <h1 class="text-xl font-bold text-purple-400 text-right mb-2">
@@ -13,9 +29,9 @@
       <v-icon
         :name="item.icon"
         v-for="item in langs"
-        @click="handleLangsChange(item.id)"
+        @click="handleLangsChange(item)"
         v-bind:class="[
-          selectedLangs.includes(item.id) && 'sidebar-btn-hover ' + item.color,
+          selectedLangs.includes(item) && 'sidebar-btn-hover ' + item.color,
         ]"
         :class="'sidebar-btn  hover:' + item.color"
       />
@@ -33,20 +49,15 @@ import Modal from '../../common/Modal.vue'
 const isOpen = ref(false)
 
 const selectedLangs = ref([])
-const addClass = (color) => {
-  return 'sidebar-btn-hover ' + color
-}
 
-const handleLangsChange = (id) => {
-  const idIndex = selectedLangs.value.findIndex((p) => p == id)
-  console.log(id)
+const handleLangsChange = (icon) => {
+  const iconIndex = selectedLangs.value.findIndex((p) => p.id == icon.id)
 
-  if (idIndex != -1) {
-    selectedLangs.value.splice(idIndex, 1)
+  if (iconIndex != -1) {
+    selectedLangs.value.splice(iconIndex, 1)
   } else {
-    selectedLangs.value.push(id)
+    selectedLangs.value.push(icon)
   }
-  console.log(selectedLangs.value)
 }
 
 const setIsOpen = (value) => {
@@ -103,3 +114,15 @@ const langs = [
   },
 ]
 </script>
+
+<style>
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+</style>

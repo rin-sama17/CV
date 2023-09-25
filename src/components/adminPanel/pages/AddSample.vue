@@ -30,14 +30,8 @@
         </span>
         <input class="input" />
       </label>
-
-      <div class="flex flex-col items-center group col-span-2">
-        <h1 class="text-xl font-bold mb-3">تکنولوژی ها</h1>
-        <div class="flex space-x-3 p-3">
-          <div class="transition-all delay-100 duration-400">
-            <SelectLangs></SelectLangs>
-          </div>
-        </div>
+      <div class="col-span-2">
+        <SelectLangs></SelectLangs>
       </div>
     </div>
   </div>
