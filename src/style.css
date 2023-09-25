@@ -23,10 +23,12 @@
     @apply block mb-2 text-xl font-medium text-white text-right;
   }
   .input {
-    @apply border my-3 text-right text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500;
+    @apply border my-3  text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500;
   }
 }
-
+input {
+  direction: rtl;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 6px;
