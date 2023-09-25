@@ -2,6 +2,8 @@ import { createApp } from 'vue';
 import './style.css';
 import App from './App.vue';
 
+import 'animate.css';
+
 import { OhVueIcon, addIcons } from 'oh-vue-icons';
 import {
   GiAncientSword,
@@ -31,7 +33,8 @@ import {
   RiAdminFill,
   HiPencil,
   IoCamera,
-  BiPlusSquareFill
+  BiPlusSquareFill,
+  SiMui
 } from 'oh-vue-icons/icons';
 
 import { router } from './router';
@@ -64,7 +67,8 @@ addIcons(
   RiAdminFill,
   HiPencil,
   IoCamera,
-  BiPlusSquareFill
+  BiPlusSquareFill,
+  SiMui
 
 );
 

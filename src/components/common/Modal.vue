@@ -31,7 +31,7 @@ console.log(isOpen)
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
         as="div"
-        class="relative mx-auto top-1/2 gird grid-cols-2 max-w-xl h-fit rounded-xl overflow-hidden bg-gray-700 flex flex-col justify-center p-4"
+        class="relative mx-auto top-[30%] gird grid-cols-2 max-w-xl h-fit rounded-xl overflow-hidden bg-gray-700 flex flex-col justify-center p-4"
       >
         <slot></slot>
       </TransitionChild>

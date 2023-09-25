@@ -55,7 +55,9 @@ const sidebarItems = [
             <h4 class="text-xl font-bold text-gray-200">
               برگشت به خانه
             </h4>
-            <button class="sidebar-btn my-2 bg-red-400 text-gray-700">
+            <button
+              class="sidebar-btn my-2 bg-indigo-600 hover:!text-gray-100 text-gray-100"
+            >
               <v-icon name="co-home" class="w-8 h-8" />
             </button>
           </div>

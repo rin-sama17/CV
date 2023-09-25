@@ -38,7 +38,7 @@ const langs = [
         <tr>
           <th scope="col" class="px-6 py-4 w-96">تکنولوژی ها</th>
           <th scope="col" class="px-6 py-4 w-8">ویرایش</th>
-          <th scope="col" class="px-6 py-4 w-16">نام</th>
+          <th scope="col" class="px-6 py-4 w-96">نام</th>
           <th scope="col" class="px-6 py-4 w-9">#</th>
         </tr>
       </template>

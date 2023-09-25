@@ -35,13 +35,14 @@
         <h1 class="text-xl font-bold mb-3">تکنولوژی ها</h1>
         <div class="flex space-x-3 p-3">
           <div class="transition-all delay-100 duration-400">
-            <v-icon
-              name="bi-plus-square-fill"
-              class="sidebar-btn hover:bg-emerald-400"
-            />
+            <SelectLangs></SelectLangs>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+import { SelectLangs } from '../components'
+</script>
