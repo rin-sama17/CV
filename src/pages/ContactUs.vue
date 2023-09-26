@@ -57,7 +57,7 @@ const team = [
 
 <template>
   <div
-    class="flex flex-col xl:grid xl:grid-cols-2 justify-center items-center overflow-y-auto"
+    class="flex flex-col xl:grid xl:grid-cols-2 md:h-full justify-center items-center overflow-y-auto"
   >
     <div class="w-full" v-for="item in team" :key="item.name">
       <div

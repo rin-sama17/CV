@@ -17,7 +17,6 @@ if (timestamp) {
     <div class="flex flex-col px-2 lg:px-20 space-y-6">
       <div
         class="transition-all duration-300 bg-gray-600 md:bg-transparent rounded p-2 w-full gap-3 flex hover:bg-gray-600"
-        v-for="i in 10"
       >
         <img
           :src="slider"
