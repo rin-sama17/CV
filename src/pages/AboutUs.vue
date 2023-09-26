@@ -63,9 +63,7 @@ const team = [
 </script>
 
 <template>
-  <div
-    class="flex flex-col justify-center items-center space-y-4 h-screen overflow-y-auto"
-  >
+  <div class="flex flex-col justify-center items-center space-y-4 pb-4">
     <div
       class="relative p-3 md:h-60 w-60 md:w-[30rem] lg:w-[39rem] rounded-2xl gap-4 flex flex-col-reverse md:grid md:grid-cols-3 md:items-center justify-end bg-gray-100 m-3 md:pr-36"
       v-for="item in team"

@@ -1,25 +1,31 @@
 <template>
-  <div class="group flex items-center">
-    <button
-      @click="setIsOpen(true)"
-      class="sidebar-btn my-2 w-auto hover:bg-purple-400 peer"
-    >
-      ساخت وبلاک جدید
-    </button>
-  </div>
+  <div class="p-4 flex flex-col items-center">
+    <ImageUploader></ImageUploader>
+    <div class="w-3/4">
+      <label class="block">
+        <span class="input-label">
+          نام
+        </span>
+        <input class="input" />
+      </label>
 
-  <Modal :isOpen="isOpen" :setIsOpen="setIsOpen">
-    <h1 class="text-bold text-xl text-purple-400 text-right mb-3">
-      ساخت وبلاک جدید
-    </h1>
-  </Modal>
+      <div class="col-span-2 mb-10">
+        <label class="block">
+          <span class="input-label">
+            مقدمه
+          </span>
+          <textarea class="input" />
+        </label>
+        <button class="sidebar-btn my-2 px-4 hover:bg-emerald-400 w-full">
+          ثبت
+        </button>
+      </div>
+    </div>
+    <TextEditor></TextEditor>
+  </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import Modal from '../../common/Modal.vue'
-const isOpen = ref(false)
-function setIsOpen(value) {
-  isOpen.value = value
-}
+import TextEditor from '../../common/TextEditor.vue'
+import ImageUploader from '../../common/ImageUploader.vue'
 </script>

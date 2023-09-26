@@ -1,24 +1,26 @@
 <template>
   <div class="flex flex-col items-center group">
-    <h1 class="text-xl font-bold mb-3">راه های ارتباطی</h1>
-    <div class="flex flex-wrap justify-end items-start gap-2 p-3">
-      <div class="flex space-x-3">
-        <Transition
-          enter-active-class="animate__animated animate__fadeIn"
-          leave-active-class="animate__animated animate__fadeOut"
-          appear
-          v-for="item in social"
-        >
-          <v-icon
-            v-if="state[item.name].length > 0"
-            :name="item.icon"
-            :class="'sidebar-btn cursor-pointer hover:' + item.color.color"
-          />
-        </Transition>
+    <h1 class="text-sm md:text-xl md:font-bold mb-3">راه های ارتباطی</h1>
+    <div class="flex flex-wrap justify-end items-start gap-2 pb-3">
+      <Transition
+        enter-active-class="animate__animated animate__fadeIn"
+        leave-active-class="animate__animated animate__fadeOut"
+        appear
+        v-for="item in social"
+      >
         <v-icon
-          name="bi-plus-square-fill"
+          v-if="state[item.name].length > 0"
+          :name="item.icon"
+          :class="'sidebar-btn cursor-pointer hover:' + item.color.color"
+        />
+      </Transition>
+      <div
+        class="transition-all delay-100 duration-400 lg:opacity-0 group-hover:opacity-100"
+      >
+        <v-icon
+          name="hi-pencil"
           @click="setIsOpen(true)"
-          class="sidebar-btn hover:bg-emerald-400"
+          class="sidebar-btn bg-sky-300 text-gray-900"
         />
       </div>
     </div>

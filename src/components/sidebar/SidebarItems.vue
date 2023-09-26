@@ -1,7 +1,5 @@
 <script setup>
-import Login from './Login.vue'
-import SideBarDrawer from './sidebar/SideBarDrawer.vue'
-import SidebarItems from './sidebar/SidebarItems.vue'
+import Login from '../Login.vue'
 
 const sidebarItems = [
   {
@@ -39,26 +37,27 @@ const sidebarItems = [
 </script>
 
 <template>
-  <div class="hidden md:sidebar">
-    <div class="flex items-center" v-for="item in sidebarItems" :key="item">
-      <div class="group flex items-center">
-        <div class="sidebar-btn-tooltip group-hover:scale-100">
-          <h4>
+  <div>
+    <div
+      class="flex items-center justify-end"
+      v-for="item in sidebarItems"
+      :key="item"
+    >
+      <router-link :to="item.to">
+        <div class="flex items-center space-x-2">
+          <h4 class="text-gray-200 text-lg font-bold">
             {{ item.name }}
           </h4>
+          <router-link
+            :to="item.to"
+            :exact-active-class="'sidebar-btn-hover my-2  ' + item.color.color"
+            :class="'sidebar-btn my-2 ' + item.color.hover"
+          >
+            <v-icon :name="item.icon" class="icon" />
+          </router-link>
         </div>
-        <router-link
-          :to="item.to"
-          :exact-active-class="'sidebar-btn-hover my-2  ' + item.color.color"
-          :class="'sidebar-btn my-2 ' + item.color.hover"
-        >
-          <v-icon :name="item.icon" class="icon" />
-        </router-link>
-      </div>
+      </router-link>
     </div>
     <Login></Login>
-  </div>
-  <div>
-    <SideBarDrawer><SidebarItems /></SideBarDrawer>
   </div>
 </template>

@@ -1,4 +1,4 @@
-import { Home, Samples, AboutUs, ContactUs, Blogs, AdminPanel, NewBlog, NewAdmin, NewSample } from "../pages";
+import { Home, Samples, AboutUs, ContactUs, Blogs, } from "../pages";
 import { MainLayout, AdminLayout } from "../layouts";
 import { createRouter, createWebHistory } from "vue-router";
 import {
@@ -10,7 +10,8 @@ import {
     AddSample,
     EditAdmin,
     EditBlog,
-    EditSample
+    EditSample,
+    AdminHome
 } from "../components/adminPanel/pages";
 
 const routes = [
@@ -25,16 +26,16 @@ const routes = [
     },
     {
         path: "/admin-panel", component: AdminLayout, children: [
-            { path: '/admin-panel', component: AdminPanel },
-            { path: '/admin-panel/admin-management', component: UserManagement },
-            { path: '/admin-panel/blog-management', component: BlogManagement },
-            { path: '/admin-panel/sample-management', component: SampleManagement },
-            { path: '/admin-panel/add-admin', component: AddAdmin },
-            { path: '/admin-panel/edit-admin', component: EditAdmin },
-            { path: '/admin-panel/add-blog', component: AddBlog },
-            { path: '/admin-panel/edit-blog', component: EditBlog },
-            { path: '/admin-panel/add-sample', component: AddSample },
-            { path: '/admin-panel/edit-sample', component: EditSample },
+            { path: '', component: AdminHome },
+            { path: 'admin-management', component: UserManagement },
+            { path: 'blog-management', component: BlogManagement },
+            { path: 'sample-management', component: SampleManagement },
+            { path: 'add-admin', component: AddAdmin },
+            { path: 'edit-admin', component: EditAdmin },
+            { path: 'add-blog', component: AddBlog },
+            { path: 'edit-blog', component: EditBlog },
+            { path: 'add-sample', component: AddSample },
+            { path: 'edit-sample', component: EditSample },
         ]
     },
 ];

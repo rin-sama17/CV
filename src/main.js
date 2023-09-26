@@ -34,7 +34,8 @@ import {
   HiPencil,
   IoCamera,
   BiPlusSquareFill,
-  SiMui
+  SiMui,
+  GiHamburgerMenu
 } from 'oh-vue-icons/icons';
 
 import { router } from './router';
@@ -68,7 +69,8 @@ addIcons(
   HiPencil,
   IoCamera,
   BiPlusSquareFill,
-  SiMui
+  SiMui,
+  GiHamburgerMenu
 
 );
 

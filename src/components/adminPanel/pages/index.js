@@ -7,3 +7,4 @@ export { default as AddSample } from "./AddSample.vue";
 export { default as EditAdmin } from "./EditAdmin.vue";
 export { default as EditBlog } from "./EditBlog.vue";
 export { default as EditSample } from "./EditSample.vue";
+export { default as AdminHome } from "./AdminHome.vue";

@@ -5,7 +5,7 @@ import AdminSidebar from '../components/adminPanel/AdminSidebar.vue'
 <template>
   <div class="flex font-['vazir']">
     <div
-      class="bg-gradient-to-tr from-gray-800 via-gray-700 to-gray-900 w-full"
+      class="bg-gradient-to-tr from-gray-800 via-gray-700 to-gray-900 w-full h-screen overflow-y-scroll"
     >
       <Transition
         enter-active-class="animate__animated animate__fadeIn"

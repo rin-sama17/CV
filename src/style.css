@@ -11,8 +11,11 @@
     @apply !text-gray-900 !shadow-xl !rounded-xl;
   }
   .sidebar-btn {
-    @apply relative p-2 rounded-3xl hover:sidebar-btn-hover bg-gray-600 w-12 h-12 transition-all
+    @apply flex justify-center items-center relative p-2 rounded-3xl hover:sidebar-btn-hover bg-gray-600 w-8 sm:w-10 md:w-12 h-8 sm:h-10 md:h-12 transition-all
      duration-300 text-gray-400;
+  }
+  .icon {
+    @apply w-5 h-5 md:h-8 md:w-8;
   }
   .sidebar-btn-tooltip {
     @apply absolute right-24 p-2 font-bold text-sm text-gray-400 bg-gray-600 rounded-md shadow-lg w-20 
@@ -20,13 +23,15 @@
   }
 
   .input-label {
-    @apply block mb-2 text-xl font-medium text-white text-right;
+    @apply block mb-2 md:text-xl text-sm font-medium text-white text-right;
   }
   .input {
     @apply border my-3  text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500;
   }
 }
-input {
+
+input,
+textarea {
   direction: rtl;
 }
 /* width */

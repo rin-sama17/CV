@@ -1,24 +1,43 @@
 <template>
-  <div class="group flex items-center">
-    <v-icon
-      @click="setIsOpen(true)"
-      name="hi-pencil"
-      class="sidebar-btn bg-sky-300 text-gray-900"
-    />
-  </div>
+  <div class="flex flex-col p-4 text-white h-screen items-center">
+    <ImageUploader></ImageUploader>
+    <div class="grid grid-cols-2 gap-4 col-span-2 w-3/4">
+      <label class="block">
+        <span class="input-label">
+          پسورد
+        </span>
+        <input class="input" />
+      </label>
+      <label class="block">
+        <span class="input-label">
+          نام کاربری
+        </span>
+        <input class="input" />
+      </label>
+      <label class="block">
+        <span class="input-label">
+          حوزه فعالیت
+        </span>
+        <input class="input" />
+      </label>
+      <label class="block">
+        <span class="input-label">
+          نام
+        </span>
+        <input type="text" class="input" />
+      </label>
+      <div class="col-span-1">
+        <SelectLangs></SelectLangs>
+      </div>
 
-  <Modal :isOpen="isOpen" :setIsOpen="setIsOpen">
-    <h1 class="text-bold text-xl text-purple-400 text-right mb-3">
-      ویرایش کاربر
-    </h1>
-  </Modal>
+      <div class="col-span-1">
+        <SelectSocial></SelectSocial>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import Modal from '../../common/Modal.vue'
-const isOpen = ref(false)
-function setIsOpen(value) {
-  isOpen.value = value
-}
+import { SelectSocial, SelectLangs } from '../components'
+import ImageUploader from '../../common/ImageUploader.vue'
 </script>

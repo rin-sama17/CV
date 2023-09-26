@@ -57,13 +57,13 @@ const team = [
 
 <template>
   <div
-    class="flex flex-col xl:grid xl:grid-cols-2 justify-center items-center h-screen overflow-y-auto"
+    class="flex flex-col xl:grid xl:grid-cols-2 justify-center items-center overflow-y-auto"
   >
     <div class="w-full" v-for="item in team" :key="item.name">
       <div
         class="mx-auto md:h-60 w-60 md:w-[30rem] rounded-2xl gap-4 flex flex-col-reverse md:grid md:grid-cols-3 md:items-center justify-end bg-gray-100 m-3"
       >
-        <div class="flex flex-col items-end col-span-2">
+        <div class="flex flex-col items-end col-span-2 px-2 md:px-0">
           <h1 :class="'font-bold text-2xl ' + item.color">{{ item.name }}</h1>
 
           <h1 class="font-bold text-xl text-gray-600">راه های ارتباطی</h1>
@@ -85,7 +85,7 @@ const team = [
           <img
             :src="item.photo.url"
             alt=""
-            class="w-20 md:w-64 md:h-full rounded rounded-r-2xl object-cover object-center"
+            class="w-60 h-28 md:w-64 md:h-full rounded md:rounded-r-2xl object-cover object-center"
           />
         </div>
       </div>

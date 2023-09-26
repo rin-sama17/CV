@@ -24,28 +24,12 @@ const langs = [
 ]
 </script>
 <template>
-  <!-- <div
-    class="flex justify-center items-center p-1 absolute h-28 w-96 shadow-2xl left-[14rem] top-0 bg-yellow-400 rounded-br-full"
-  >
-    <h1 class="text-3xl font-bold text-gray-800">
-      جدیدترین پروژه ها
-    </h1>
-  </div>
-  <div
-    class="p-1 absolute shadow-2xl -left-16 -top-16 bg-gradient-to-tr from-yellow-400 to-red-400 rounded-full"
-  >
-    <img
-      :src="bg01"
-      alt=""
-      class="h-80 w-80 object-cover rounded-full object-center border-4 border-gray-600"
-    />
-  </div> -->
-
-  <div class="container mx-auto flex justify-center items-center h-full">
+  <div class="container mx-auto flex justify-center items-center">
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-2"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-16 pb-10 px-3 md:px-10"
     >
       <div
+        v-for="i in 10"
         class="relative flex flex-col bg-gray-100 space-y-3 rounded-xl hover:rounded-lg transition-all dutation-300 overflow-hidden"
       >
         <img
@@ -60,7 +44,7 @@ const langs = [
             فروشگاه لبخند
           </h1>
           <h1 class="font-bold text-xl text-gray-600">تکنولوژی ها</h1>
-          <div class="flex space-x-2">
+          <div class="flex flex-wrap justify-end space-x-2">
             <div v-for="icon in langs" :key="icon.name">
               <v-icon :name="icon.icon" :class="'sidebar-btn ' + icon.color" />
             </div>

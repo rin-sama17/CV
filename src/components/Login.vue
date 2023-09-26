@@ -1,18 +1,22 @@
 <template>
-  <div class="group flex items-center">
-    <div class="sidebar-btn-tooltip group-hover:scale-100">
-      <h4>
-        ورود
-      </h4>
-    </div>
-    <router-link to="/admin-panel">
-      <button
-        @click="setIsOpen(true)"
-        class="sidebar-btn my-2 hover:bg-purple-400 peer"
+  <div class="flex items-center justify-end">
+    <div class="flex items-center space-x-2">
+      <div
+        class="font-bold text-lg text-gray-400 md:sidebar-btn-tooltip group-hover:scale-100"
       >
-        <v-icon name="fa-regular-user" class="w-8 h-8" />
-      </button>
-    </router-link>
+        <h4>
+          ورود
+        </h4>
+      </div>
+      <router-link to="/admin-panel">
+        <button
+          @click="setIsOpen(true)"
+          class="sidebar-btn my-2 hover:bg-purple-400"
+        >
+          <v-icon name="fa-regular-user" class="icon" />
+        </button>
+      </router-link>
+    </div>
   </div>
 
   <Modal :isOpen="isOpen" :setIsOpen="setIsOpen">

@@ -29,7 +29,9 @@ const options = [
 </script>
 <template>
   <div class="grid grid-cols-2 container m-auto h-screen content-evenly">
-    <div class="flex flex-col justify-center items-center">
+    <div
+      class="flex flex-col justify-center items-center col-span-2 md:col-span-1"
+    >
       <h1 class="font-bold text-2xl text-gray-200">
         سایت خود را به ما بسپرید
       </h1>
@@ -38,7 +40,7 @@ const options = [
         در سریعترین زمان و با بهترین کیفیت ممکن
       </p>
     </div>
-    <div class="flex justify-center items-center">
+    <div class="hidden md:flex col-span-1 justify-center items-center">
       <div
         class="p-2 transition-all duration-700 bg-gradient-to-bl from-indigo-400 to-red-500 rounded-full shadow-2xl"
       >
@@ -55,9 +57,11 @@ const options = [
       >
         <v-icon
           :name="item.icon"
-          :class="'sidebar-btn w-20 h-20 text-gray-900 ' + item.color"
+          :class="
+            'sidebar-btn w-12 h-12 md:w-20 md:h-20 text-gray-900 ' + item.color
+          "
         />
-        <h1 class="text-2xl font-bold mt-2 mb-1 text-gray-100">
+        <h1 class="text-lg md:text-2xl font-bold mt-2 mb-1 text-gray-100">
           {{ item.name }}
         </h1>
         <h1 class="text-sm my-1 text-slate-300 w-[8rem] text-center">

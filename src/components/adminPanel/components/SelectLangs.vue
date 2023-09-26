@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center group">
-    <h1 class="text-xl font-bold mb-3">تکنولوژی ها</h1>
-    <div class="flex space-x-3 p-3">
+    <h1 class="text-sm md:text-xl md:font-bold mb-3">تکنولوژی ها</h1>
+    <div class="flex flex-wrap justify-end gap-1 pb-3">
       <Transition
         enter-active-class="animate__animated animate__fadeIn"
         leave-active-class="animate__animated animate__fadeOut"
@@ -13,11 +13,15 @@
           :class="' sidebar-btn  hover:' + item.color"
         />
       </Transition>
-      <v-icon
-        name="bi-plus-square-fill"
-        @click="setIsOpen(true)"
-        class="sidebar-btn hover:bg-emerald-400"
-      />
+      <div
+        class="transition-all delay-100 duration-400 lg:opacity-0 group-hover:opacity-100"
+      >
+        <v-icon
+          name="hi-pencil"
+          @click="setIsOpen(true)"
+          class="sidebar-btn bg-sky-300 text-gray-900"
+        />
+      </div>
     </div>
   </div>
 
@@ -36,9 +40,6 @@
         :class="'sidebar-btn  hover:' + item.color"
       />
     </div>
-    <button class="sidebar-btn my-2 px-4 w-auto hover:bg-blue-400">
-      ثبت
-    </button>
   </Modal>
 </template>
 
