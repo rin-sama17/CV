@@ -75,7 +75,6 @@ addIcons(
 );
 
 
-const DEFAULT_TITLE = 'پورتفولیو';
 router.beforeEach((to, from, next) => {
   document.title = `پورتفولیو ${to.name ? "| " + to.name : ''}`;
   next();

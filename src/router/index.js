@@ -1,6 +1,6 @@
-import { Home, Samples, AboutUs, ContactUs, Blogs } from '../pages'
-import { MainLayout, AdminLayout } from '../layouts'
-import { createRouter, createWebHistory } from 'vue-router'
+import { Home, Samples, AboutUs, ContactUs, Blogs } from '../pages';
+import { MainLayout, AdminLayout } from '../layouts';
+import { createRouter, createWebHistory } from 'vue-router';
 import {
   UserManagement,
   BlogManagement,
@@ -12,7 +12,7 @@ import {
   EditBlog,
   EditSample,
   AdminHome,
-} from '../components/adminPanel/pages'
+} from '../components/adminPanel/pages';
 
 const routes = [
   {
@@ -59,9 +59,9 @@ const routes = [
       { name: 'ویرایش نمونه کار', path: 'edit-sample', component: EditSample },
     ],
   },
-]
+];
 
 export const router = createRouter({
   history: createWebHistory(),
   routes,
-})
+});

@@ -12,7 +12,7 @@
           ورود
         </h4>
       </div>
-      <router-link to="/admin-panel">
+      <router-link to="/admin-panel" class="md:!mx-auto">
         <button
           @click="setIsOpen(true)"
           class="sidebar-btn my-2 hover:bg-purple-400"

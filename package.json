@@ -1,10 +1,11 @@
 {
+  "homepage": "https://rin-sama17.github.io/CV",
   "name": "my-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "deploy": "deploy.sh",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
