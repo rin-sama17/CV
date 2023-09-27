@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: ''
+    publicPath: 'https://rin-sama17.github.io/CV'
 };
