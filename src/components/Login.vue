@@ -1,6 +1,10 @@
 <template>
   <div class="flex items-center justify-end">
-    <div class="flex items-center space-x-2">
+    <router-link
+      to="/admin-panel"
+      tag="div"
+      class="flex items-center space-x-2"
+    >
       <div
         class="font-bold text-lg text-gray-400 md:sidebar-btn-tooltip group-hover:scale-100"
       >
@@ -16,7 +20,7 @@
           <v-icon name="fa-regular-user" class="icon" />
         </button>
       </router-link>
-    </div>
+    </router-link>
   </div>
 
   <Modal :isOpen="isOpen" :setIsOpen="setIsOpen">

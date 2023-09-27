@@ -14,17 +14,20 @@ const team = [
         name: 'تلگرام',
         color: 'hover:bg-sky-400',
         icon: 'fa-telegram-plane',
+        to: 'https://t.me/rin_sama',
       },
       {
         name: 'ایمیل',
         color: 'hover:bg-yellow-400',
         icon: 'md-email-outlined',
+        to: 'mailto:okumura.rin.samaa@gmail.com',
       },
-      {
-        name: 'تماس',
-        color: 'hover:bg-green-500',
-        icon: 'bi-telephone-fill',
-      },
+      // {
+      //   name: 'تماس',
+      //   color: 'hover:bg-green-500',
+      //   icon: 'bi-telephone-fill',
+      //   to:''
+      // },
     ],
   },
   {
@@ -39,17 +42,20 @@ const team = [
         name: 'تلگرام',
         color: 'hover:bg-sky-400',
         icon: 'fa-telegram-plane',
+        to: 'https://t.me/Msala1214',
       },
-      {
-        name: 'ایمیل',
-        color: 'hover:bg-yellow-400',
-        icon: 'md-email-outlined',
-      },
-      {
-        name: 'تماس',
-        color: 'hover:bg-green-500',
-        icon: 'bi-telephone-fill',
-      },
+      // {
+      //   name: 'ایمیل',
+      //   color: 'hover:bg-yellow-400',
+      //   icon: 'md-email-outlined',
+      //   to: '',
+      // },
+      // {
+      //   name: 'تماس',
+      //   color: 'hover:bg-green-500',
+      //   icon: 'bi-telephone-fill',
+      //   to: '',
+      // },
     ],
   },
 ]
@@ -69,10 +75,12 @@ const team = [
           <h1 class="font-bold text-xl text-gray-600">راه های ارتباطی</h1>
           <div class="flex flex-wrap justify-end items-start mt-1 gap-2 p-3">
             <div v-for="icon in item.social" :key="icon.name">
-              <v-icon
-                :name="icon.icon"
-                :class="'sidebar-btn cursor-pointer ' + icon.color"
-              />
+              <a :href="icon.to" target="_blank">
+                <v-icon
+                  :name="icon.icon"
+                  :class="'sidebar-btn cursor-pointer ' + icon.color"
+                />
+              </a>
             </div>
           </div>
         </div>

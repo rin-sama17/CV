@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center group">
+  <div class="flex flex-col items-center">
     <h1 class="text-sm md:text-xl md:font-bold mb-3">راه های ارتباطی</h1>
     <div class="flex flex-wrap justify-end items-start gap-2 pb-3">
       <Transition
@@ -14,9 +14,7 @@
           :class="'sidebar-btn cursor-pointer hover:' + item.color.color"
         />
       </Transition>
-      <div
-        class="transition-all delay-100 duration-400 lg:opacity-0 group-hover:opacity-100"
-      >
+      <div class="transition-all delay-100 duration-400">
         <v-icon
           name="hi-pencil"
           @click="setIsOpen(true)"
