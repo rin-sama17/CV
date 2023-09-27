@@ -63,3 +63,7 @@ body {
 html {
   overflow: -moz-scrollbars-none;
 }
+
+* {
+  font-family: 'vazir';
+}
