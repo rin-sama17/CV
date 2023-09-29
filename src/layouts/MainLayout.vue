@@ -3,9 +3,9 @@ import Sidebar from '../components/Sidebar.vue'
 </script>
 
 <template>
-  <div class="flex font-['vazir']">
+  <div class="flex !font-['tanha']">
     <div
-      class="bg-gradient-to-tr from-gray-800 via-gray-700 to-gray-900 w-full overflow-y-scroll h-screen"
+      class="bg-gradient-to-tr from-gray-800 via-gray-700 to-gray-900 w-full overflow-y-scroll custom-h-screen"
     >
       <Transition
         enter-active-class="animate__animated animate__fadeIn"

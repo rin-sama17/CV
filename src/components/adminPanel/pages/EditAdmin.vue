@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col p-4 text-white h-screen items-center">
+  <div class="flex flex-col p-4 text-white custom-h-screen items-center">
     <ImageUploader></ImageUploader>
     <div class="grid grid-cols-2 gap-4 col-span-2 w-3/4">
       <label class="block">

@@ -1,6 +1,6 @@
 import { Home, Samples, AboutUs, ContactUs, Blogs } from '../pages';
 import { MainLayout, AdminLayout } from '../layouts';
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import {
   UserManagement,
   BlogManagement,
@@ -62,6 +62,6 @@ const routes = [
 ];
 
 export const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 });

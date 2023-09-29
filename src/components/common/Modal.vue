@@ -12,7 +12,7 @@ console.log(isOpen)
 
 <template>
   <TransitionRoot :show="isOpen">
-    <Dialog @close="setIsOpen" class="fixed inset-0 p-4 font-[vazir]">
+    <Dialog @close="setIsOpen" class="fixed inset-0 p-4 !font-['vazir']">
       <TransitionChild
         enter=" duration-300 ease-out"
         enterFrom="opacity-0 "

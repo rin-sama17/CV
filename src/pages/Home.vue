@@ -28,7 +28,7 @@ const options = [
 ]
 </script>
 <template>
-  <div class="grid grid-cols-2 container m-auto h-screen content-evenly">
+  <div class="grid grid-cols-2 container m-auto custom-h-screen content-evenly">
     <div
       class="flex flex-col justify-center items-center col-span-2 md:col-span-1"
     >

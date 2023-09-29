@@ -6,7 +6,7 @@
   </button>
 
   <div
-    class="fixed z-20 w-52 px-4 py-2 shadow-2xl bg-gray-600 h-screen transition-all ease-in-out duration-700 top-0 -right-full peer-focus:right-0"
+    class="fixed z-20 w-52 px-4 py-2 shadow-2xl bg-gray-600 custom-h-screen transition-all ease-in-out duration-700 top-0 -right-full peer-focus:right-0"
   >
     <slot></slot>
   </div>

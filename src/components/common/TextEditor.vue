@@ -3,7 +3,7 @@
     <QuillEditor
       theme="snow"
       toolbar="full"
-      class="!font-[vazir] rounded-lg"
+      class="!font-['tanha'] rounded-lg"
       v-model:content="content"
     />
     <!-- :read-only="true" -->

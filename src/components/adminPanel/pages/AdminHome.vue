@@ -7,7 +7,7 @@ import SelectSocial from '../components/SelectSocial.vue'
 
 <template>
   <div
-    class="flex flex-col md:p-4 text-white h-screen items-center md:container mx-auto"
+    class="flex flex-col md:p-4 text-white custom-h-screen items-center md:container mx-auto"
   >
     <ImageUploader
       :img="rin"

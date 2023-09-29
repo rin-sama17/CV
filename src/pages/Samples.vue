@@ -28,7 +28,9 @@ const langs = [
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-16 pb-10 px-3 md:px-10"
     >
-      <div
+      <a
+        href="https://labkhand-carpet.ir"
+        target="_blank"
         class="relative flex flex-col bg-gray-100 space-y-3 rounded-xl hover:rounded-lg transition-all dutation-300 overflow-hidden"
       >
         <img
@@ -49,7 +51,7 @@ const langs = [
             </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </template>
